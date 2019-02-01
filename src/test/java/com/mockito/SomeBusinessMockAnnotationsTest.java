@@ -19,7 +19,7 @@ public class SomeBusinessMockAnnotationsTest {
 	DataService dataServiceMock;
 	
 	@InjectMocks
-	SomeBusinessImpl businessImpl;
+	SomeBusinessImpl businessImpl; // Injects dataServiceMock into businessImpl
 	
 	@Test
 	public void testFindTheGreatestFromAllData() {
